@@ -1,0 +1,28 @@
+<div class="container">
+    <h2>Hero component</h2>
+    <h2>H0la a todos!</h2>
+    <th>Name:</th>
+    <dd>{{ name }}</dd><br>
+
+    <th>Age:</th>
+    <dd>{{ age }}</dd><br>
+
+    <th>Power:</th>
+    <dd>{{ power }}</dd><br>
+
+    <th>Country:</th>
+    <dd>{{ country }}</dd><br>
+
+    <button 
+        *ngIf="name == 'Spiderman'"
+        class="btn btn-primary mx-2">
+        Botón
+    </button>
+
+    <button
+        class="btn btn-primary mx-2"
+        (click)="changeH2()">
+        Change H2
+    </button>
+</div>
+
